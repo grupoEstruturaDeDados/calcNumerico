@@ -41,6 +41,7 @@
 
         private static void TrapezioRepetido(double a, int n, double deltaX)
         {
+            //f(x) = h/2 * [f(x0) + 2*[f(x1) + f(x2) + f(x3) + f(x4)] + f(x5)]
             double soma1 = 0;
             double soma2 = 0;
             int contador = n;
@@ -78,6 +79,8 @@
 
         private static void UmTercoDeSimpsonRepetida(double a, int n, double deltaX)
         {
+            //Só pode ser usado quando há um número de intervalos par, pois depende de 3 pontos
+            //f(x) = h/3 * [(f(x0) + 4*f(x1) + f(x2)) + (f(x2) + 4*f(x3) + f(x4)) + (f(x4) + 4*f(x5) + f(x6))]
             double soma1 = 0;
             double soma2 = 0;
             double soma3 = 0;
